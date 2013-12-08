@@ -23,9 +23,19 @@ public class String_calc_test {
 
 	@Test // oz
 	public void addStringTwoNumberTest() {
-	stringCalc str = new stringCalc();
-	int sum = str.Add("5,2");
-	assertEquals(7,sum);
+		stringCalc str = new stringCalc();
+		int sum = str.Add("5,2");
+		assertEquals(7,sum);
 	
+	}
+	
+	@Test
+	public void addSrtingMultNumnersTest(){
+		stringCalc str = new stringCalc();
+		int sum = str.Add("5,2,4,11");
+		assertEquals(22,sum);
+		
+		
+		
 	}
 }
