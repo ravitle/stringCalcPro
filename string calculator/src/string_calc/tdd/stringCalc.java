@@ -13,7 +13,7 @@ public class stringCalc {
 	int num1 = stringToInt(string,0,i);
 		if(i == string.length())
 			return num1;
-		int num2 = stringToInt(string,i, string.length());
+		int num2 = stringToInt(string,i+1, string.length());
 			return num1 + num2;	
 	
 			
