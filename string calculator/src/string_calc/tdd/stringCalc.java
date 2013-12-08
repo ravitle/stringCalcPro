@@ -6,17 +6,21 @@ public class stringCalc {
 		if(string.equals(""))
 			return 0;
 		
-	int i;
+	int i,j;
 	 for(i = 0; i < string.length(); i++)
 			if(string.charAt(i) == ',')
 					break;
 	int num1 = stringToInt(string,0,i);
-		if(i == string.length())
-			return num1;
-	int num2 = stringToInt(string,i+1, string.length());
-		return num1 + num2;	
-			
-	
+	if(i == string.length())
+			return num1;	
+	for(j = i; j < string.length(); j++)
+		if(string.charAt(j) == ',')
+		 	{
+		 		num1 += stringToInt(string,i+1,j);
+		 		i = j;
+		 	}	
+	num1+=stringToInt(string, i+1, string.length());
+	return num1;
 			
 			
 			
