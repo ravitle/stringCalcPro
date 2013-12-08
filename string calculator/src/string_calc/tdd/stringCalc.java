@@ -10,7 +10,7 @@ public class stringCalc {
 	 for(i = 0; i < string.length(); i++)
 			if(string.charAt(i) == ',')
 					break;
-	int num1 = stringToInt(string,0,i+1);
+	int num1 = stringToInt(string,0,i);
 		return num1;
 	
 	}
