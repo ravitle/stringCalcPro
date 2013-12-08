@@ -13,5 +13,15 @@ public class String_calc_test {
 		assertEquals(0,sum);
 	}
 
+	@Test //oz
+	public void addStringOneNumberTest() {
+		stringCalc str = new stringCalc();
+		int sum = str.Add("5");
+		assertEquals(5,sum);
+	}
+	
+	
+	
+	
 	
 }
