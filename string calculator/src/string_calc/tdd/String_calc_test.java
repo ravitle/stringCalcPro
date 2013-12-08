@@ -12,21 +12,6 @@ public class String_calc_test {
 		int sum = str.Add("");
 		assertEquals(0,sum);
 	}
-	/*
-	@Test //oz
-	public void addStringOneNumberTest() {
-		stringCalc str = new stringCalc();
-		int sum = str.Add("5");
-		assertEquals(5,sum);
-	}
-*/
-/*
- 		@Test // oz
-		public void addStringTwoNumberTest() {
-		stringCalc str = new stringCalc();
-		int sum = str.Add("5,2");
-		assertEquals(7,sum);
-	}
-*/
+
 	
 }
