@@ -20,8 +20,12 @@ public class String_calc_test {
 		assertEquals(5,sum);
 	}
 	
+
+	@Test // oz
+	public void addStringTwoNumberTest() {
+	stringCalc str = new stringCalc();
+	int sum = str.Add("5,2");
+	assertEquals(7,sum);
 	
-	
-	
-	
+	}
 }

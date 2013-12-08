@@ -11,8 +11,13 @@ public class stringCalc {
 			if(string.charAt(i) == ',')
 					break;
 	int num1 = stringToInt(string,0,i);
-		return num1;
+		if(i == string.length())
+			return num1;
+		int num2 = stringToInt(string,i, string.length());
+			return num1 + num2;	
 	
+			
+			
 	}
 	
 	
