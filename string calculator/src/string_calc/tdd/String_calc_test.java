@@ -34,8 +34,12 @@ public class String_calc_test {
 		stringCalc str = new stringCalc();
 		int sum = str.Add("5,2,4,11");
 		assertEquals(22,sum);
-		
-		
-		
+	}	
+	@Test
+	public void diffrentDelTest(){
+		stringCalc str = new stringCalc();
+		int sum = str.Add("/-\n5-2-4-11");
+		assertEquals(22,sum);
 	}
 }
+
