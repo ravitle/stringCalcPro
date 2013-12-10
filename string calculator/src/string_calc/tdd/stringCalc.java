@@ -8,8 +8,10 @@ public class stringCalc {
 		
 	int i,j;
 	char del =',';
-	if(string.charAt(0) == '/' && string.charAt(1) == '/' && string.charAt(3) == '\n')
+	if(string.charAt(0) == '/' && string.charAt(1) == '/' && string.charAt(3) == '\n'){
 		del = string.charAt(2);
+		string=string.substring(4);
+	}
 		
 	 for(i = 0; i < string.length(); i++)
 			if(string.charAt(i) == ',' || string.charAt(i) == '\n' || string.charAt(i) == del)
